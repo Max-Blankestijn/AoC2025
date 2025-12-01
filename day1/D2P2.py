@@ -5,7 +5,7 @@ dial = 50
 zero_count = 0
 
 for line in lines:
-    direction = direction = {"L": -1, "R": 1}[line[0]]
+    direction = {"L": -1, "R": 1}[line[0]]
     amount = int(line[1:])
 
     for i in range(1, amount+1):

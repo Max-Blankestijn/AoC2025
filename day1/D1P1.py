@@ -3,6 +3,7 @@ with open("input.txt") as file:
 
 dial = 50
 zero_count = 0
+
 for line in lines:
     direction = {"L": -1, "R": 1}[line[0]]
     amount = int(line[1:])
