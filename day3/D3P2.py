@@ -25,5 +25,3 @@ for bank in banks:
     total_joltage += int(joltage)
 
 print(total_joltage)
-
-# 172886048065379
