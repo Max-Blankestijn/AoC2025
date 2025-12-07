@@ -14,7 +14,7 @@ new_beams = []
 split = {}
 count = 0
 
-for iter in range(100):
+while beams:
     for i, beam in enumerate(beams):
         for j in range(len(lines)):
             if beam + 1j * j in key_points:
