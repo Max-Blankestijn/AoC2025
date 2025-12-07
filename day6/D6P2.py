@@ -1,6 +1,6 @@
 import numpy as np
 
-with open("sample.txt") as file:
+with open("input.txt") as file:
     lines = [line.strip() for line in file.readlines()]
 
 char_array = [list(line) for line in lines]
@@ -32,7 +32,6 @@ for equation in equations:
             total += np.product(cur_equation)
         else:
             total += np.sum(cur_equation)
-
         operator_idx += 1
         cur_equation = np.array([])
 
