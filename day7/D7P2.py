@@ -11,7 +11,6 @@ for j, line in enumerate(lines):
 
 beams = {start+1j: 1}
 new_beams = {}
-split = {}
 count = 0
 
 for iter in range(100):
