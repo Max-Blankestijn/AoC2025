@@ -13,7 +13,7 @@ beams = {start+1j: 1}
 new_beams = {}
 count = 0
 
-for iter in range(100):
+while beams:
     for beam, value in beams.items():
         for j in range(len(lines)):
             if beam + 1j * j in key_points:
