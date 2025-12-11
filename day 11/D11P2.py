@@ -21,5 +21,8 @@ def new_paths(path, dac, fft):
             return 0
     return sum((new_paths(cur_path, dac, fft) for cur_path in paths[path]))
 
-count = new_paths("svr", False, False)
-print(count)
+part1 = new_paths("you", True, True)
+print(f"Solution to part 1: {part1}")
+
+part2 = new_paths("svr", False, False)
+print(f"Solution to part 2: {part2}")
