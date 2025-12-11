@@ -12,9 +12,9 @@ for line in lines:
 def new_paths(path, dac, fft):
     if path == "dac":
         dac = True
-    if path == "fft":
+    elif path == "fft":
         fft = True
-    if path == "out":
+    elif path == "out":
         if dac and fft:
             return 1
         else:
